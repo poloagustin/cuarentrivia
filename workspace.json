@@ -56,6 +56,37 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "develop": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/www/src/environments/environment.ts",
+                  "with": "apps/www/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "apps/www/src/firebase/get-firebase.ts",
+                  "with": "apps/www/src/firebase/get-firebase.prod.ts"
+                },
+                {
+                  "replace": "apps/www/src/firebase/init-firebase.ts",
+                  "with": "apps/www/src/firebase/init-firebase.prod.ts"
+                }
+              ],
+              "index": "apps/www/src/index.prod/index.html",
+              "optimization": false,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
@@ -104,6 +135,9 @@
           "configurations": {
             "production": {
               "args": "--configuration=production"
+            },
+            "develop": {
+              "args": "--configuration=develop"
             }
           }
         }
