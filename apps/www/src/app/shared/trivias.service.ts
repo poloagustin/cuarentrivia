@@ -1,4 +1,5 @@
-import firebase, { User } from 'firebase/app';
+import firebase from '../../firebase/get-firebase';
+import { User } from 'firebase/app';
 import verifyTriviaId from './verify-trivia-id';
 import {
   Trivia,

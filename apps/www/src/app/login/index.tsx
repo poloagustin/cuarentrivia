@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { FirebaseAuth } from 'react-firebaseui';
-import firebase from 'firebase/app';
+import firebase from '../../firebase/get-firebase';
 import useTitle from '../shared/use-title.hook';
 import { useQuery } from '../shared/use-query.hook';
 import logo from '../../assets/icons/android-icon-36x36.png';

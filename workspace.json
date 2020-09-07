@@ -31,9 +31,18 @@
                 {
                   "replace": "apps/www/src/environments/environment.ts",
                   "with": "apps/www/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "apps/www/src/firebase/get-firebase.ts",
+                  "with": "apps/www/src/firebase/get-firebase.prod.ts"
+                },
+                {
+                  "replace": "apps/www/src/firebase/init-firebase.ts",
+                  "with": "apps/www/src/firebase/init-firebase.prod.ts"
                 }
               ],
-              "optimization": true,
+              "index": "apps/www/src/index.prod/index.html",
+              "optimization": false,
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
